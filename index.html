@@ -3,27 +3,36 @@
     <head>
         <title>lab</title>
         <link rel="stylesheet" href="assets/css/styles.css" />     
-           
     </head>
     <body>
 
         <div class="center-div">
-            <svg height="100" width="300" id="svgcircle1">
-                   <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="#ffffff" id="circle1" >
-                        <animate attributeType="XML" attributeName="r" from="10" to="40" dur="500ms" repeatCount="2"/>
-                    </circle>
+            <svg height="450" width="450" id="svgcircle1">
 
-                    <circle cx="150" cy="50" r="40" stroke="white" stroke-width="3" fill="#ffffff" id="circle2" >
-                            <animate attributeType="XML" attributeName="r" from="10" to="40" dur="500ms" begin="20ms" repeatCount="2"/>
-                    </circle>
+                <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" fill="none" id="subcircle1" >
+                    <animate dur="200ms" id="animatecircle2" attributeName="cy" begin="animatecircle1.begin" from="200" to="300" fill="freeze" />
+                </circle>
 
-                    <circle cx="250" cy="50" r="40" stroke="white" stroke-width="3" fill="#ffffff" id="circle2" >
-                            <animate attributeType="XML" attributeName="r" from="10" to="40" dur="500ms" begin="300ms" repeatCount="2"/>
-                    </circle>
+                <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" fill="none" id="subcircle2" >
+                    <animate dur="200ms" id="animatecircle3" attributeName="cy" begin="animatecircle1.begin" from="200" to="100" fill="freeze" />
+                </circle>
 
-                    Sorry, your browser does not support inline SVG.  
+                <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" fill="none" id="subcircle3" >
+                    <animate dur="200ms" id="animatecircle3" attributeName="cx" begin="animatecircle1.begin" from="200" to="300" fill="freeze" />
+                </circle>
+
+                <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" fill="none" id="subcircle4" >
+                    <animate dur="200ms" id="animatecircle3" attributeName="cx" begin="animatecircle1.begin" from="200" to="100" fill="freeze" />
+                </circle>
+
+                <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" fill="#ffffff" id="circle1">
+                    <animate id="animatecircle1" attributeType="XML" attributeName="r" from="35" to="40" dur="400ms" begin="click;"/>
+                </circle>
+
+                Sorry, your browser does not support inline SVG.  
+                  
               </svg>             
         </div>
 
     </body>
-</html> 
+</html>
