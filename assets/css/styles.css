@@ -15,6 +15,7 @@ body
   width: 400px;
   height: 400px;
   border-radius: 3px;
-
 }
+
+#circle1{cursor: pointer;}
 
